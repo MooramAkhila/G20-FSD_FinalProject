@@ -1,0 +1,622 @@
+
+/* CSS Styles */
+.hello-container {
+    background-image: url('../assests/b3.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .left-content {
+    width: 50%;
+    padding-right: 20px;
+    color: black;
+    /* Space between text and image */
+  }
+  .text-container{
+    color: black;
+  }
+  
+.text-background {
+
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Space between text and stats */
+}
+
+.t1 {
+    font-size: 36px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.get-started-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.explore-courses-btn {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+  
+  .right-image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right-image {
+    width: 100%; /* Adjust to fit container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+  }
+  
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(94, 60, 123); /* Change to your preferred color */
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Logo styles */
+.logo {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust the size of the logo */
+    margin-right: 1rem;
+}
+
+.text-container {
+    color: white;
+}
+
+.welcome-text {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.learning-platform {
+    margin: 0;
+    font-size: 1rem;
+}
+/* Main Content Container */
+.main-content {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding: 20px; /* Add padding around the container */
+    margin-top: 80px; /* Space below the navbar */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex; /* Use flexbox layout for the content wrapper */
+    width: 100%; /* Ensure wrapper takes full width of main-content */
+}
+
+/* Text Content */
+.text-content {
+    flex: 1; /* Allow text content to take up available space */
+    max-width: 50%; /* Limit the width of the text content */
+    margin-right: 20px; /* Space between text and image */
+    color: black; /* Ensure text is readable */
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 20px; /* Add space above buttons */
+}
+
+/* Image Content */
+.image-content {
+    flex: 1; /* Allow image content to take up available space */
+    max-width: 50%; /* Limit the width of the image content */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+/* Main Image */
+.main-image {
+    width: 100%; /* Ensure image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack text and image vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack text and image vertically in the wrapper */
+        width: 100%; /* Ensure wrapper takes full width on small screens */
+    }
+
+    .text-content {
+        max-width: 100%; /* Allow text content to take full width */
+        margin-right: 0; /* Remove margin on small screens */
+    }
+
+    .image-content {
+        max-width: 100%; /* Allow image content to take full width */
+        margin-top: 20px; /* Add space between text and image */
+    }
+}
+
+
+
+/* Nav title */
+.nav-title {
+    margin-left: 10px; /* Space between logo and title */
+    display: flex; /* Use flex to align items */
+    flex-direction: column; /* Stack title and subtitle vertically */
+    justify-content: center; /* Center vertically */
+}
+
+/* Navbar title styling */
+.nav-title h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+    color: white; /* Change text color */
+}
+
+/* Navbar subtitle styling */
+.nav-title p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size for subtitle */
+    color: white; /* Change text color */
+}
+
+/* Navbar links */
+.nav-link {
+    color: white; /* Change text color */
+    margin: 0 15px; /* Space between navbar buttons */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Login button container */
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Login button */
+.login-button {
+    background-color: yellow; /* Change button color */
+    color: black; /* Change text color */
+    padding: 8px 12px; /* Adjust padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 16px; /* Adjust font size */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Adjust navbar for responsiveness */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none; /* Show on mobile */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on small screens */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .navbar-right {
+        display: none; /* Hide navbar links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position menu */
+        top: 60px; /* Adjust based on navbar height */
+        right: 0;
+        background-color: navy; /* Match navbar background */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .navbar-right.active {
+        display: flex; /* Show when hamburger is clicked */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Space links vertically */
+    }
+}
+
+/* Add some padding to the top of the body content */
+body {
+    padding-top: 60px; /* Adjust based on the height of the navbar */
+}
+
+
+
+/* Login button styling */
+.login-container {
+    margin-right:20px;
+    margin-left: 20px; /* Add space before login button */
+}
+
+.login-button {
+    background-color: yellow;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack vertically */
+        position: absolute;
+        top: 50px; /* Position below navbar */
+        left: 0;
+        right: 0;
+        background-color: purple; /* Match navbar background */
+        align-items: center;
+    }
+
+    .navbar-right.active {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger in mobile view */
+    }
+
+    .navbar-left {
+        flex-direction: column; /* Stack logo and title vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.text-content {
+    flex: 1;
+    color: black;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Button container and button styling */
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-yellow {
+    background-color: yellow;
+    color: black;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.how-it-works h2 {
+    font-size: 24px;
+   
+}
+.step-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    color: black;
+    font-weight: bold; /* Make the text bold */
+}
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Responsive styles for How It Works section */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column; /* Stack boxes vertically on small screens */
+    }
+
+    .step-box {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10px auto; /* Center boxes */
+    }
+
+    .arrow {
+        display: none; /* Hide arrows on mobile */
+    }
+}
+
+.step-box {
+    background-color: rgba(255, 255, 255, 0.927);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    color: black;
+}
+.how-it-works {
+    position: relative; /* Position relative for positioning the line */
+}
+
+
+/* Keyframes for the animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-10px); /* Start above the line */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* End visible */
+    }
+}
+.boxes-container {
+    background-color: aliceblue;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right divs */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.left-div, .right-div {
+    background-color: aliceblue;
+
+    width: 48%; /* Each div takes up 48% of the container */
+    display: flex; /* Use flexbox to layout boxes within each div */
+    flex-direction: column; /* Stack boxes vertically */
+}
+
+.box {
+    background-color:white; /* Black background for boxes */
+    color: black; /* White text color */
+    padding: 20px; /* Padding for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin-bottom: 20px; /* Space below each box */
+    flex: 1; /* Make boxes flexible to take equal space */
+    display: flex; /* Use flexbox for box content */
+    flex-direction: column; /* Stack heading and paragraph */
+    justify-content: center; /* Center content vertically */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    font-weight: 100;
+}
+
+/* Hover effect for boxes */
+.box:hover {
+    background-color: darkgray; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly scale up the box */
+}
+
+.box h3 {
+    margin-bottom: 10px; /* Margin below the heading */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .boxes-container {
+        flex-direction: column; /* Stack left and right divs vertically */
+    }
+    .left-div, .right-div {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space below each div */
+    }
+    .box {
+        margin-bottom: 20px; /* Margin for boxes */
+    }
+}
+
+
+
+
+
+/* Recognised By Section */
+.recognised-by {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.recognised-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+.image-box {
+    flex: 1;
+    max-width: 200px; /* Limit max width */
+}
+
+.recognised-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.alumni-section {
+    text-align: center; /* Center the title */
+    margin: 40px 0; /* Space above and below the section */
+}
+
+.company-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of boxes */
+    justify-content: center; /* Center align the boxes */
+    gap: 20px; /* Space between boxes */
+}
+
+.company-box {
+    background-color: rgb(99, 99, 204); /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    flex: 0 1 150px; /* Flexible box width */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.company-box img {
+    max-width: 100%; /* Ensure the image fits within the box */
+    max-height: 100px; /* Set a max height for images */
+    border-radius: 4px; /* Optional: rounded corners for images */
+}
+
+.company-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.collaborators-section {
+    background-color: rgb(31, 71, 75); /* Mixed black and grey */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Space around the section */
+    text-align: center; /* Center text */
+}
+
+.collaborator-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap */
+    justify-content: center; /* Center align boxes */
+    gap: 20px; /* Space between boxes */
+}
+
+.collaborator-box {
+    background-color:white ; /* Darker grey for boxes  rgb(220, 122, 122)*/
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px; /* Space inside boxes */
+    text-decoration: none; /* Remove underline */
+    color:black; /* Text color */
+    flex: 1 1 150px; /* Flexible box width */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.collaborator-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@media (max-width: 600px) {
+    .collaborator-box {
+        flex: 1 1 100%; /* Full width for small screens */
+    }
+}
+.footer {
+    background-color: rgb(173, 216, 230); /* Sky Blue */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-logo {
+    height: 40px; /* Adjust height as needed */
+}
+
+.footer-content {
+    text-align: left; /* Align text to the left */
+    flex-grow: 1; /* Allow this section to grow and occupy space */
+    margin-left: 10px; /* Add space between logo and text */
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right p {
+    margin: 0;
+    padding-right: 10px; /* Space between text and icon */
+}
+
+.linkedin-icon {
+    height: 24px; /* Adjust height as needed */
+}
+

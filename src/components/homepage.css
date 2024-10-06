@@ -1,0 +1,233 @@
+.home-page {
+    background-image: url('../assests/homepage5.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .left-content {
+    width: 50%;
+    padding-right: 20px; /* Space between text and image */
+  }
+  
+  .right-image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .right-image {
+    width: 100%; /* Adjust to fit container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+  }
+  
+.text-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Space between text and stats */
+}
+
+.t1 {
+    font-size: 36px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.get-started-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.explore-courses-btn {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns initially */
+    gap: 20px; /* Increased gap to ensure spacing between boxes */
+    width: 100%; /* Adjusted to fit within the container */
+    box-sizing: border-box;
+    margin-bottom: 30px; /* Space between stats and internships */
+}
+
+.stat-box {
+    background-color: white;
+    color: green;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto; /* Ensure the height adjusts based on content */
+    min-height: 150px; /* Ensure minimum height for better appearance */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect */
+.stat-box:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker shade on hover */
+}
+
+.internship-projects {
+    text-align: center;
+    margin: 30px 0; /* Margin around the heading */
+}
+
+.internship-projects h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-projects {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    flex: 0 0 50%; /* Each card takes up 50% of the width */
+    background-color: black; /* Black background */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.project-card h3 {
+    color: green; /* Green color for the heading */
+}
+
+.project-card p {
+    color: white; /* White color for the subheading */
+}
+
+.project-card:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker shade on hover */
+}
+
+.project-image {
+    width: 100%; /* Ensure the image fits within the card */
+    height: 300px; /* Set a fixed height for the image */
+    object-fit: cover; /* Cover the space with the image */
+    border-radius: 8px;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.additional-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between boxes */
+    margin-top: 30px; /* Gap before the section */
+}
+
+.info-box {
+    background-color: #4b0082; /* Dark purple background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 10px); /* 2 boxes per row, adjust width */
+    box-sizing: border-box;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}.additional-info-section {
+    margin-bottom: 30px; /* Adjust spacing as needed */
+  }
+  
+  /* Collaborators section */
+  .collaborators-section {
+    background-color: #333; /* Dusty attic background color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .collaborators-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .collaborators-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .collaborator-box {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    text-align: center;
+    width: 150px; /* Adjust size as needed */
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .collaborator-box:hover {
+    opacity: 0.8;
+  }

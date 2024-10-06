@@ -1,0 +1,163 @@
+/* login.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.nav-link:hover {
+    color: lightgrey; /* Change text color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Additional styling for focus, if desired */
+.nav-link:focus {
+    outline: none; /* Remove default focus outline */
+    color: lightgrey; /* Color change on focus */
+}
+
+
+/* Login Main Container */
+.login-main-container {
+    margin-top: 80px; /* Height of the fixed navbar */
+    height: calc(100vh - 80px); /* Full viewport height minus navbar height */
+    display: flex;
+}
+
+.login-content {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, pink 50%, rgb(222, 212, 222) 50%);
+}
+
+.login-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white; /* Ensure the form area has a white background */
+}
+
+.login-header {
+    margin-bottom: 20px;
+}
+
+.login-text {
+    width: 100%;
+}
+
+.login-text h5 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    margin-top: 10px;
+}
+
+.signup-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.login-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-content {
+        flex-direction: column;
+    }
+
+    .login-form-container, .login-image {
+        width: 100%;
+    }
+
+    .login-image {
+        margin-top: 20px;
+    }
+}

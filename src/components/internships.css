@@ -1,0 +1,157 @@
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+body{
+    background-color:lightgrey;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.login-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color:purple;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 10px; /* Height of the fixed navbar */
+}
+
+.internship-projects {
+   
+    text-align: center;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-projects {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    flex: 0 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .carousel-projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+}
